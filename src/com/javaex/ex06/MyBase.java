@@ -6,12 +6,15 @@ public class MyBase extends Base{
 	
 	public void service(String state) {
 
-        if (state.equals("오후")) { //문자열의 같다(==) 는 equals()를 사용합니다.
+        if (state.equals("낮")) { //문자열의 같다(==) 는 equals()를 사용합니다.
+        	day();
+        }
+        else if (state.equals("밤")) {
+        	night();
+        }
+        else if (state.equals("오후")) {
         	afternoon();
         }
-        /*else if (state.equals("오후")) {
-        	afternoon();
-        }*/
     }
 	
 	public void day() {
